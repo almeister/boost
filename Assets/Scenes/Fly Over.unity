@@ -337,8 +337,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16425191, y: -0.0029598027, z: 0.00049266964, w: 0.9864139}
-  m_LocalPosition: {x: -30.918736, y: 17.433569, z: -19.630913}
+  m_LocalRotation: {x: -0.004499927, y: -0.004499075, z: -0.000042530126, w: 0.9999798}
+  m_LocalPosition: {x: -37.67759, y: 7.2303963, z: -28.172955}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -434,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6936827136768643149, guid: 1328c18ddeba26643af8ccbb65cf101a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.999742
+      value: 5.7638845
       objectReference: {fileID: 0}
     - target: {fileID: 6936827136768643149, guid: 1328c18ddeba26643af8ccbb65cf101a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -502,33 +502,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 210165078741114639, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
-      propertyPath: crashClip
-      value: 
-      objectReference: {fileID: 8300000, guid: d353997403f40bd44a1b45cec818d272, type: 3}
-    - target: {fileID: 210165078741114639, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
-      propertyPath: finishedClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3119ebf0ec579d143a7fc1858f476779, type: 3}
-    - target: {fileID: 1128041361236035230, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5805885959671853795, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
-      propertyPath: mainEngineClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 47e82d846293e004a97693c4fea5554c, type: 3}
     - target: {fileID: 6417404332808086541, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 8882948525677584878, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.013
+      value: -42.97
       objectReference: {fileID: 0}
     - target: {fileID: 8882948525677584878, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.54
+      value: 1.19
       objectReference: {fileID: 0}
     - target: {fileID: 8882948525677584878, guid: ceaa418f32adb0145b3d95876b1b69a9, type: 3}
       propertyPath: m_LocalPosition.z

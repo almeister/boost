@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour
   [SerializeField] float rotationThrust = 100f;
   [SerializeField] AudioClip mainEngineClip;
 
+  [SerializeField] ParticleSystem mainThrusterParticles;
+  [SerializeField] ParticleSystem leftSideThrusterParticles;
+  [SerializeField] ParticleSystem rightSideThrusterParticles;
+
   private Rigidbody _rigidBody;
   private AudioSource _audioSource;
 
@@ -30,18 +34,11 @@ public class Movement : MonoBehaviour
   {
     if (Input.GetKey(KeyCode.W))
     {
-      // Add thrust in direction rocket is pointing
-      float impulse = mainThrust * Time.deltaTime;
-      _rigidBody.AddRelativeForce(impulse * Vector3.up);
-
-      if (!_audioSource.isPlaying)
-      {
-        _audioSource.PlayOneShot(mainEngineClip);
-      }
+      ApplyThrust();
     }
     else
     {
-      _audioSource.Stop();
+      StopThrust();
     }
   }
 
@@ -51,12 +48,51 @@ public class Movement : MonoBehaviour
     {
       // Rotate counter-clockwise
       ApplyRotation(rotationThrust);
+      PlayParticlesIfNotPlaying(rightSideThrusterParticles);
     }
     else if (Input.GetKey(KeyCode.D))
     {
       // Rotate clockwise
       ApplyRotation(-rotationThrust);
+      PlayParticlesIfNotPlaying(leftSideThrusterParticles);
     }
+    else
+    {
+      StopSideThrust();
+    }
+  }
+
+  private void StopThrust()
+  {
+    _audioSource.Stop();
+    mainThrusterParticles.Stop();
+  }
+
+  private void ApplyThrust()
+  {
+    // Add thrust in direction rocket is pointing
+    float impulse = mainThrust * Time.deltaTime;
+    _rigidBody.AddRelativeForce(impulse * Vector3.up);
+    PlayParticlesIfNotPlaying(mainThrusterParticles);
+
+    if (!_audioSource.isPlaying)
+    {
+      _audioSource.PlayOneShot(mainEngineClip);
+    }
+  }
+
+  private void PlayParticlesIfNotPlaying(ParticleSystem particleSystem)
+  {
+    if (!particleSystem.isPlaying)
+    {
+      particleSystem.Play();
+    }
+  }
+
+  private void StopSideThrust()
+  {
+    leftSideThrusterParticles.Stop();
+    rightSideThrusterParticles.Stop();
   }
 
   private void ApplyRotation(float rotation)
