@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 1128041361236035230}
   - component: {fileID: 5250374547949369240}
   - component: {fileID: 853896407943126533}
+  - component: {fileID: 9184826953726877787}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Player
@@ -432,6 +433,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cd329fa5cb3ed4ea94fb54df9b20e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9184826953726877787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417404332808086541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22b6dc9d607b1640bc9cd90749ae703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8946084578570713735
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +596,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 6.29
   m_Range: 13.89
-  m_SpotAngle: 30
+  m_SpotAngle: 59
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:

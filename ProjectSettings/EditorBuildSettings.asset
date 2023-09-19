@@ -8,10 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fly Over.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Scenes/Under.unity
-    guid: 5e2769261b754464d9ec0d1cb55c41d0
+  - enabled: 1
+    path: Assets/Scenes/Tunnel.unity
+    guid: 2a0ef98e63657184ca3c56c53d3286a2
+  - enabled: 1
+    path: Assets/Scenes/Gap.unity
+    guid: 6c3d2519de329424f91048d8fd235e21
   - enabled: 1
     path: Assets/Scenes/Fly Under.unity
     guid: 4a0963b2375967d4eada1a0371c5c68d
+  - enabled: 1
+    path: Assets/Scenes/Bouncinng Rocks.unity
+    guid: 0b3b9a5285add06418a0e874b2ea6b07
+  - enabled: 1
+    path: Assets/Scenes/Moving Gap.unity
+    guid: f67ebb4878b586c4aa7ba2cbe09b4102
+  - enabled: 1
+    path: Assets/Scenes/Multiple Moving Obstacles.unity
+    guid: d889feda678ee854e85f0faf3b9eac78
   m_configObjects: {}
